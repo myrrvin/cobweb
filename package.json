@@ -1,0 +1,29 @@
+{
+  "name": "cobweb",
+  "version": "1.0.0",
+  "description": "graph commands runner",
+  "main": "./build/index.js",
+  "bin": {
+    "cobweb": "./build/index.js"
+  },
+  "scripts": {
+    "build": "rm -rf ./build && tsc && chmod +x ./build/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix ."
+  },
+  "author": "myrrvin",
+  "license": "ISC",
+  "devDependencies": {
+    "@eslint/js": "^9.14.0",
+    "@types/eslint-config-prettier": "^6.11.3",
+    "@types/node": "^22.8.7",
+    "eslint": "^9.14.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "globals": "^15.11.0",
+    "prettier": "^3.3.3",
+    "typescript": "^5.6.3",
+    "typescript-eslint": "^8.12.2"
+  }
+}
